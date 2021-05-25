@@ -1,4 +1,4 @@
-Select max(TotalSales)
+Select max(TotalSales), EmployeeName
 from (SELECT
     Sum(i.Total) as TotalSales,
     strftime("%Y", i.InvoiceDate) AS InvoiceYear,
